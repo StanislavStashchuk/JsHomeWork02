@@ -35,7 +35,9 @@ let a, b, c;
 
 function concatination (a, b, c) {
     let x = toString(a);
-    console.log(x);
+    let y = toString(b);
+    let z = toString(c);
+    console.log(x+y+z);
 }
 
 concatination( 5, 6, 8);
