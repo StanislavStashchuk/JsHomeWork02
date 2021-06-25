@@ -31,7 +31,7 @@ function factorial(a) {
     }
 }
 
-factorial(5);
+factorial(6);
 
 // Three
 //Написать функцию, которая принимает три отдельные 
@@ -47,7 +47,7 @@ function a (x, y, z) {
     }
 
 }
-a(0,2,1);
+a(9,2,1);
 
 //  Four
 // Написать функцию, которая принимает длину и ширину 
@@ -111,7 +111,6 @@ function time (hours, minutes, seconds) {
     } else {
         seconds = seconds;
     }
-
     console.log("''" + hours + ":" + minutes + ":" + seconds + "''");
 }
 
@@ -120,6 +119,9 @@ time(493,493,4944);
 // Eight
 // Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
 
-function time (hours, minutes, seconds) {
-    
+function time2 (hours, minutes, seconds) {
+    let secondsOutput = (hours * 3600) + (minutes * 60) + seconds;
+    console.log(secondsOutput);
 }
+
+time2(1,1,1);
