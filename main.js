@@ -72,11 +72,51 @@ rectanleArea(10, 2);
 // это число, равное сумме всех своих собственных делителей.
 
 // Six 
-//
+// Написать функцию, которая принимает минимальное и максимальное 
+// значения для диапазона, и выводит только те числа из диапазона, которые 
+// являются совершенными. Используйте написанную ранее функцию, чтобы узнавать, совершенное число или нет.
 
 // Seven 
 // -Написать функцию, которая принимает время (часы, минуты, секунды) 
 // и выводит его на экран в формате «чч:мм:сс».Если при вызове функции 
 // минуты и/или секунды не были переданы, то выводить их как 00.
+
+function time (hours, minutes, seconds) {
+    if (hours > 0 && hours < 10) {
+        hours = "0" + hours;
+    } else if (hours === undefined || hours === 24) {
+        hours = "00";
+    } else if (hours > 23) {
+        hours = hours % 24;
+    } else {
+        hours = hours;
+    }
+
+    if (minutes > 0 && minutes < 10) {
+        minutes = "0" + minutes;
+    } else if (minutes === undefined || minutes === 60) {
+        minutes = "00";
+    } else if (minutes > 59) {
+        minutes = minutes % 60;
+    } else {
+        minutes = minutes;
+    }
+
+    if (seconds > 0 && seconds < 10) {
+        seconds = "0" + seconds;
+    } else if (seconds === undefined || seconds === 60) {
+        seconds = "00";
+    } else if (seconds > 59) {
+        seconds = seconds % 60;
+    } else {
+        seconds = seconds;
+    }
+
+    console.log("''" + hours + ":" + minutes + ":" + seconds + "''");
+}
+
+time(493,493,4944);
+
+// Eight
 // Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
 
